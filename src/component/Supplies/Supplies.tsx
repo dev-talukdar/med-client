@@ -13,6 +13,7 @@ export type TSupply = {
 
 const Supplies = () => {
   const { data: supplies } = useGetAllSuppliesQuery(undefined);
+  console.log(supplies);
   const [showAll, setShowAll] = useState(false);
   const visibleSupplies = showAll
     ? supplies?.data

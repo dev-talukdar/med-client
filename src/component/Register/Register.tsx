@@ -29,6 +29,7 @@ const Register = () => {
       );
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       const res: any = await registerUser(userInfo);
+      console.log(res);
 
       if (res?.error) {
         toast.error(`Something went wrong`, {
